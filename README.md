@@ -20,7 +20,7 @@ A professional AI-powered resume analysis tool that provides comprehensive feedb
 
 ## 🚀 Live Demo
 
-**Deployed on Render**: [Your App URL Here]
+**Deployed on Render**: https://your-actual-render-url.onrender.com
 
 ## 🛠️ Tech Stack
 
