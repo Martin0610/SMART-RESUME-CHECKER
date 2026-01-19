@@ -1,0 +1,50 @@
+John Smith
+Data Scientist | Machine Learning Engineer
+Email: john.smith@email.com
+Phone: (555) 123-4567
+
+PROFESSIONAL SUMMARY
+Experienced Data Scientist with 5+ years of expertise in machine learning, statistical analysis, and data visualization. Proficient in Python, R, and SQL with a strong background in developing predictive models and extracting insights from complex datasets.
+
+TECHNICAL SKILLS
+Programming Languages: Python, R, SQL, JavaScript
+Machine Learning: Scikit-learn, TensorFlow, PyTorch, Keras
+Data Analysis: Pandas, NumPy, Matplotlib, Seaborn
+Databases: PostgreSQL, MongoDB, MySQL
+Tools: Jupyter, Git, Docker, Tableau, Power BI
+Cloud Platforms: AWS, Google Cloud Platform
+
+PROFESSIONAL EXPERIENCE
+
+Senior Data Scientist | TechCorp Inc. | 2021 - Present
+• Developed machine learning models that improved customer retention by 25%
+• Built predictive analytics solutions using Python and scikit-learn
+• Created interactive dashboards using Tableau and Power BI
+• Collaborated with cross-functional teams to implement data-driven solutions
+• Mentored junior data scientists and conducted code reviews
+
+Data Analyst | DataSolutions LLC | 2019 - 2021
+• Performed statistical analysis on large datasets using Python and R
+• Developed automated reporting systems that reduced manual work by 60%
+• Created data visualizations and presented findings to stakeholders
+• Implemented ETL processes for data pipeline optimization
+
+EDUCATION
+Master of Science in Data Science | University of Technology | 2019
+Bachelor of Science in Statistics | State University | 2017
+
+PROJECTS
+Customer Churn Prediction Model
+• Built a machine learning model using Random Forest and XGBoost
+• Achieved 92% accuracy in predicting customer churn
+• Implemented feature engineering and hyperparameter tuning
+
+Sales Forecasting Dashboard
+• Created an interactive dashboard using Python and Plotly
+• Integrated real-time data from multiple sources
+• Provided actionable insights for sales team
+
+CERTIFICATIONS
+• AWS Certified Machine Learning - Specialty
+• Google Cloud Professional Data Engineer
+• Tableau Desktop Specialist

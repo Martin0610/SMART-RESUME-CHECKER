@@ -1,0 +1,423 @@
+/* Custom CSS for Enhanced Resume Checker */
+
+:root {
+    --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+    --light-bg: rgba(255, 255, 255, 0.95);
+    --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-medium: 0 8px 25px rgba(0, 0, 0, 0.15);
+    --shadow-heavy: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Global Styles */
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Enhanced Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Component Animations */
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.slide-in-right {
+    animation: slideInRight 0.5s ease-out;
+}
+
+/* Enhanced Cards */
+.card-enhanced {
+    border: none;
+    border-radius: 20px;
+    box-shadow: var(--shadow-medium);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.card-enhanced:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-heavy);
+}
+
+/* Gradient Backgrounds */
+.bg-gradient-primary {
+    background: var(--primary-gradient);
+}
+
+.bg-gradient-success {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+}
+
+.bg-gradient-danger {
+    background: linear-gradient(135deg, #dc3545 0%, #fd7e14 100%);
+}
+
+.bg-gradient-warning {
+    background: linear-gradient(135deg, #ffc107 0%, #fd7e14 100%);
+}
+
+/* Enhanced Buttons */
+.btn-enhanced {
+    border-radius: 50px;
+    padding: 12px 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-enhanced::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+}
+
+.btn-enhanced:hover::before {
+    left: 100%;
+}
+
+.btn-enhanced:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* File Upload Zone */
+.upload-zone {
+    border: 3px dashed #007bff;
+    border-radius: 20px;
+    padding: 60px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, rgba(0,123,255,0.05) 0%, rgba(102,126,234,0.05) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.upload-zone::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0,123,255,0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.upload-zone:hover::before {
+    opacity: 1;
+}
+
+.upload-zone.drag-over {
+    border-color: var(--success-color);
+    background: linear-gradient(135deg, rgba(40,167,69,0.1) 0%, rgba(32,201,151,0.1) 100%);
+    transform: scale(1.02);
+}
+
+.upload-zone .upload-icon {
+    font-size: 4rem;
+    color: #007bff;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.upload-zone:hover .upload-icon {
+    transform: scale(1.1);
+    animation: pulse 2s infinite;
+}
+
+/* Progress Indicators */
+.progress-enhanced {
+    height: 8px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.progress-enhanced .progress-bar {
+    background: var(--primary-gradient);
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+/* Skill Badges */
+.skill-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 4px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-badge::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s;
+}
+
+.skill-badge:hover::before {
+    left: 100%;
+}
+
+.skill-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.skill-badge.found {
+    background: var(--success-color);
+    color: white;
+}
+
+.skill-badge.missing {
+    background: var(--danger-color);
+    color: white;
+}
+
+/* Metric Cards */
+.metric-card {
+    background: var(--light-bg);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.metric-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--primary-gradient);
+}
+
+.metric-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-heavy);
+}
+
+.metric-value {
+    font-size: 3rem;
+    font-weight: 700;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+
+.metric-label {
+    font-size: 1.1rem;
+    color: #666;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Results Section */
+.results-container {
+    margin-top: 40px;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.results-header {
+    background: var(--primary-gradient);
+    color: white;
+    padding: 30px;
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+}
+
+.results-body {
+    background: white;
+    padding: 40px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: var(--shadow-medium);
+}
+
+/* Chart Container */
+.chart-container {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: var(--shadow-light);
+    margin: 20px 0;
+}
+
+/* Feedback Section */
+.feedback-item {
+    background: rgba(0,123,255,0.05);
+    border-left: 4px solid #007bff;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 0 10px 10px 0;
+    transition: all 0.3s ease;
+}
+
+.feedback-item:hover {
+    background: rgba(0,123,255,0.1);
+    transform: translateX(5px);
+}
+
+.feedback-item.success {
+    border-left-color: var(--success-color);
+    background: rgba(40,167,69,0.05);
+}
+
+.feedback-item.warning {
+    border-left-color: var(--warning-color);
+    background: rgba(255,193,7,0.05);
+}
+
+.feedback-item.danger {
+    border-left-color: var(--danger-color);
+    background: rgba(220,53,69,0.05);
+}
+
+/* Loading States */
+.loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .metric-card {
+        margin-bottom: 20px;
+    }
+    
+    .upload-zone {
+        padding: 40px 15px;
+    }
+    
+    .upload-zone .upload-icon {
+        font-size: 3rem;
+    }
+    
+    .metric-value {
+        font-size: 2.5rem;
+    }
+    
+    .results-header,
+    .results-body {
+        padding: 20px;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --light-bg: rgba(33, 37, 41, 0.95);
+    }
+    
+    body {
+        background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+        color: #f8f9fa;
+    }
+    
+    .card-enhanced {
+        background: var(--light-bg);
+        color: #f8f9fa;
+    }
+    
+    .metric-card {
+        background: var(--light-bg);
+        color: #f8f9fa;
+    }
+}
+
+/* Accessibility Improvements */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Focus States */
+.btn:focus,
+.form-control:focus,
+.form-select:focus {
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+    border-color: #667eea;
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .upload-zone {
+        border-width: 4px;
+    }
+    
+    .skill-badge {
+        border: 2px solid currentColor;
+    }
+}
