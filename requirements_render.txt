@@ -1,8 +1,8 @@
-Flask==3.0.0
-matplotlib==3.8.2
-PyPDF2==3.0.1
-docx2txt==0.8
-fpdf2==2.7.9
-Werkzeug==3.0.1
-gunicorn==21.2.0
-numpy==1.26.2
+Flask
+matplotlib
+PyPDF2
+docx2txt
+fpdf2
+Werkzeug
+gunicorn
+numpy
