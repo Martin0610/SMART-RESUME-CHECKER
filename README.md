@@ -20,7 +20,7 @@ A professional AI-powered resume analysis tool that provides comprehensive feedb
 
 ## 🚀 Live Demo
 
-**Deployed on Render**: https://your-actual-render-url.onrender.com
+**Deployed on Render**: https://smart-resume-checker-ls0r.onrender.com/
 
 ## 🛠️ Tech Stack
 
